@@ -182,7 +182,7 @@ Project Link: [https://github.com/0xStabby/chatgpt-vim](https://github.com/0xSta
 [issues-shield]: https://img.shields.io/github/issues/0xStabby/chatgpt-vim.svg?style=for-the-badge
 [issues-url]: https://github.com/0xStabby/chatgpt-vim/issues
 [license-shield]: https://img.shields.io/github/license/0xStabby/chatgpt-vim.svg?style=for-the-badge
-[license-url]: https://github.com/0xStabby/chatgpt-vim/blob/master/LICENSE.txt
+[license-url]: https://github.com/0xStabby/chatgpt-vim/blob/main/LICENSE.txt
 [product-screenshot]: images/screenshot.png
 [Vim.org]: https://img.shields.io/static/v1?style=for-the-badge&message=Vim&color=019733&logo=Vim&logoColor=FFFFFF&label=
 [Vim-url]: https://vim.org 
