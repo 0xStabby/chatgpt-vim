@@ -63,7 +63,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com.com/0xStabby/chatgpt-vim)
+[![Product Name Screen Shot][product-screenshot]](https://github.com/0xStabby/chatgpt-vim)
 _generating a working todo web app with chatgpt-vim_
 
 Vim Plugin to use ChatGPT in Vim.
