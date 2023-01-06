@@ -1,5 +1,4 @@
 function! GPT()
-    " call inputsave()
     let prompt = input("Enter chatgpt prompt: ")
     let output = system("chatgpt '" . prompt . "'")
     echo "\n" . output
@@ -7,7 +6,6 @@ function! GPT()
       call feedkeys("i")
       call feedkeys(output)
     endif
-    " call inputrestore()
 endfunction
 
 command! Gpt call GPT()
