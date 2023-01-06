@@ -12,7 +12,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/0xStabby/chatgpt-vim">
-    <!-- <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
+    <img src="images/chatgpt-vim-logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">chatgpt-vim</h3>
@@ -63,7 +63,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<!-- [![Product Name Screen Shot][product-screenshot]](https://github.com/0xStabby/chatgpt-vim) -->
+[![Product Name Screen Shot][product-screenshot]](https://github.com.com/0xStabby/chatgpt-vim)
+_generating a working todo web app with chatgpt-vim_
 
 Vim Plugin to use ChatGPT in Vim.
 
@@ -109,6 +110,7 @@ You will need this [chatgpt wrapper and cli](https://github.com/mmabrouk/chatgpt
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+
 
 1. In normal mode type `gpt`
 2. You will be prompted for input
@@ -183,7 +185,7 @@ Project Link: [https://github.com/0xStabby/chatgpt-vim](https://github.com/0xSta
 [issues-url]: https://github.com/0xStabby/chatgpt-vim/issues
 [license-shield]: https://img.shields.io/github/license/0xStabby/chatgpt-vim.svg?style=for-the-badge
 [license-url]: https://github.com/0xStabby/chatgpt-vim/blob/main/LICENSE.txt
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/chatgpt-vim.gif
 [Vim.org]: https://img.shields.io/static/v1?style=for-the-badge&message=Vim&color=019733&logo=Vim&logoColor=FFFFFF&label=
 [Vim-url]: https://vim.org 
 [OpenAI.com]: https://img.shields.io/badge/OpenAI-ChatGPT-159776?style=for-the-badge
