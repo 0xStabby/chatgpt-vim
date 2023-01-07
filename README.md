@@ -18,7 +18,7 @@
 <h3 align="center">chatgpt-vim</h3>
 
   <p align="center">
-    ChatGPT in Vim, the future is now
+    ChatGPT in Vim
     <br />
     <a href="https://github.com/0xStabby/chatgpt-vim"><strong>Explore the docs »</strong></a>
     <br />
