@@ -55,4 +55,3 @@ map gpt :Gpt<cr>
 map gpr :GptRun<cr>
 map gpf :GptFile<cr>
 
-

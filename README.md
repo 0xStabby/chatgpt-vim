@@ -66,7 +66,8 @@
 [![Product Name Screen Shot][product-screenshot]](https://github.com/0xStabby/chatgpt-vim)
 _generating a working todo web app with chatgpt-vim_
 
-Vim Plugin to use ChatGPT in Vim.
+#### This plugin provides an easy way to use OpenAI's GPT-3 API from within Vim.
+#### It currently provides three commands and three mappings to make it easy to use.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,7 +89,19 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-You will need this [chatgpt wrapper and cli](https://github.com/mmabrouk/chatgpt-wrapper)
+This plugin works with both [chatgpt wrapper/cli](https://github.com/mmabrouk/chatgpt-wrapper) or the [openai-cli](https://github.com/peterdemin/openai-cl)
+
+The first option works with chatgpt by connecting through the browser ui to get the session key.
+The second option works with the openai api and an api key.
+
+With chatgpt somethimes being too busy to use the second option is more reliable.
+
+With the second option there is also the ability to change the model you would like to interact with.
+
+Currently I have added some new features which are only available for the openai api option.
+I may add these to the ChatGPT option in the future, but for now they are available with the api openai api option since it's the more reliable option.
+
+For the [chatgpt wrapper/cli](https://github.com/mmabrouk/chatgpt-wrapper) option you will need:
 * chatgpt-wrapper
   ```sh
   pip install git+https://github.com/mmabrouk/chatgpt-wrapper
@@ -99,6 +112,19 @@ You will need this [chatgpt wrapper and cli](https://github.com/mmabrouk/chatgpt
   chatgpt install
   ```
 * Exit out of that command once you are logged in
+
+For the [openai-cli](https://github.com/peterdemin/openai-cli) option you will need:
+
+* [openai api key](https://beta.openai.com/account/api-keys)
+* openai-cli
+  ```sh
+  pip install openai-cli
+  ```
+* create a `~/.config/openai.token` file and add your openai api key to it
+  ```sh
+  echo "YOUR TOKEN HERE" > ~/.config/openai.token
+  ```
+
 
 ### Installation
 
@@ -111,13 +137,20 @@ You will need this [chatgpt wrapper and cli](https://github.com/mmabrouk/chatgpt
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+If there is a ~/.config/openai.token the openai api will be used by default.
 
-1. In normal mode type `gpt`
-2. You will be prompted for input
-3. Enter your prompt for gpt
-4. Wait.. takes a lil bit to load
-5. Review ChatGPT output
-6. If you like the output and would like to write to the file select Y
+### Commands
+
+- Gpt: Prompts the user for a prompt and then uses OpenAI's GPT-3 API or ChatGPT to generate a response.
+- GptRun: Prompts the user for a command to run on the current file and then uses OpenAI's GPT-3 API to generate a response based on the contents of the current file and run log.
+- GptFile: Prompts the user for a prompt and then uses OpenAI's GPT-3 API to generate a response based on the contents of the current file.
+
+### Mappings
+
+- gpt: Maps to the Gpt command.
+- gpr: Maps to the GptRun command.
+- gpf: Maps to the GptFile command.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -129,6 +162,12 @@ You will need this [chatgpt wrapper and cli](https://github.com/mmabrouk/chatgpt
 - [x] Ask ChatGPT from Vim
 - [x] Review output
 - [x] Write output to file on user Confirmation
+- [x] Hook up to openai api
+- [ ] Add more functions
+    - [x] Send file contents along with request
+    - [x] Send file contents and run log along with request
+    - [ ] Send visually selected contents along withrequest and replace selected
+    - [ ] More useful stuff as I think of it
 
 See the [open issues](https://github.com/0xStabby/chatgpt-vim/issues) for a full list of proposed features (and known issues).
 
