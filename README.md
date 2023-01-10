@@ -92,14 +92,15 @@ To get a local copy up and running follow these simple example steps.
 This plugin works with both [chatgpt wrapper/cli](https://github.com/mmabrouk/chatgpt-wrapper) or the [openai-cli](https://github.com/peterdemin/openai-cl)
 
 The first option works with chatgpt by connecting through the browser ui to get the session key.
-The second option works with the openai api and an api key.
+The [openai-cli](https://github.com/peterdemin/openai-cl) option works with the openai api and an api key.
 
-With chatgpt somethimes being too busy to use the second option is more reliable.
+With chatgpt somethimes being too busy to use the [openai-cli](https://github.com/peterdemin/openai-cl) option is more reliable.
 
-With the second option there is also the ability to change the model you would like to interact with.
+With the [openai-cli](https://github.com/peterdemin/openai-cl) option there is also the ability to change the model you would like to interact with.
 
-Currently I have added some new features which are only available for the openai api option.
-I may add these to the ChatGPT option in the future, but for now they are available with the api openai api option since it's the more reliable option.
+Currently the GPTRun and GPTFile commands are only available for the openai api option.
+the `:GPT` command is available on either option.
+I may add `:GPTRun` and `:GPTFile` to the ChatGPT option in the future, but for now they are available with the api openai api option since it's the more reliable option.
 
 For the [chatgpt wrapper/cli](https://github.com/mmabrouk/chatgpt-wrapper) option you will need:
 * chatgpt-wrapper
@@ -141,15 +142,18 @@ If there is a ~/.config/openai.token the openai api will be used by default.
 
 ### Commands
 
-- Gpt: Prompts the user for a prompt and then uses OpenAI's GPT-3 API or ChatGPT to generate a response.
-- GptRun: Prompts the user for a command to run on the current file and then uses OpenAI's GPT-3 API to generate a response based on the contents of the current file and run log.
-- GptFile: Prompts the user for a prompt and then uses OpenAI's GPT-3 API to generate a response based on the contents of the current file.
+`:GPT` is available to either option chatgpt or openai.
+`:GPTRun` and `:GPTFile` are only available with the openai option.
+
+- `:GPT` Prompts the user for a prompt and then uses OpenAI's GPT-3 API or ChatGPT to generate a response.
+- `:GPTRun` Prompts the user for a command to run on the current file and then uses OpenAI's GPT-3 API to generate a response based on the contents of the current file and run log.
+- `:GPTFile` Prompts the user for a prompt and then uses OpenAI's GPT-3 API to generate a response based on the contents of the current file.
 
 ### Mappings
 
-- gpt: Maps to the Gpt command.
-- gpr: Maps to the GptRun command.
-- gpf: Maps to the GptFile command.
+- `gpt` Maps to the `:GPT` command.
+- `gpr` Maps to the `:GPTRun` command.
+- `gpf` Maps to the `:GPTFile` command.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
