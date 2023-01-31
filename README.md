@@ -89,14 +89,14 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This plugin works with both [chatgpt wrapper/cli](https://github.com/mmabrouk/chatgpt-wrapper) or the [openai-cli](https://github.com/peterdemin/openai-cl)
+This plugin works with both [chatgpt wrapper/cli](https://github.com/mmabrouk/chatgpt-wrapper) or the [openai-cli](https://github.com/peterdemin/openai-cli)
 
 The first option works with chatgpt by connecting through the browser ui to get the session key.
-The [openai-cli](https://github.com/peterdemin/openai-cl) option works with the openai api and an api key.
+The [openai-cli](https://github.com/peterdemin/openai-cli) option works with the openai api and an api key.
 
-With chatgpt somethimes being too busy to use the [openai-cli](https://github.com/peterdemin/openai-cl) option is more reliable.
+With chatgpt somethimes being too busy to use the [openai-cli](https://github.com/peterdemin/openai-cli) option is more reliable.
 
-With the [openai-cli](https://github.com/peterdemin/openai-cl) option there is also the ability to change the model you would like to interact with.
+With the [openai-cli](https://github.com/peterdemin/openai-cli) option there is also the ability to change the model you would like to interact with.
 
 Currently the GPTRun and GPTFile commands are only available for the openai api option.
 the `:GPT` command is available on either option.
