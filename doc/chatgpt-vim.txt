@@ -7,3 +7,5 @@
                                                                                         
                                                                                         
 type gpt in normal mode, follow the prompts
+type gpf in normal mode, follow the prompts
+type gpr in normal mode, follow the prompts
