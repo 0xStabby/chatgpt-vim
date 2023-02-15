@@ -63,7 +63,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/0xStabby/chatgpt-vim/blob/master/images/chatgpt-vim.gif)
+[![Product Name Screen Shot][product-screenshot]](https://github.com/0xStabby/chatgpt-vim)
 _generating a working todo web app with chatgpt-vim_
 
 #### This plugin provides an easy way to use OpenAI's GPT-3 API from within Vim.
@@ -138,7 +138,7 @@ For the [openai-cli](https://github.com/peterdemin/openai-cli) option you will n
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-[![GPTFile & GPTRun Demo][gpf-gpr-demo-gif]](https://github.com/0xStabby/chatgpt-vim/blob/master/images/gpf-gpr-demo.gif)
+[![GPTFile & GPTRun Demo][gpf-gpr-demo-gif]](https://github.com/0xStabby/chatgpt-vim)
 
 If there is a ~/.config/openai.token the openai api will be used by default.
 
