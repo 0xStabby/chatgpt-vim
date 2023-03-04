@@ -5,6 +5,10 @@ else
 endif
 
 function! GPT()
+  " Override function from COCvim plugin temp
+  function! CheckBackspace() abort
+    return
+  endfunction
   let prompt = input("Enter chatgpt prompt: ")
   if g:openaiToken isnot v:null
     let output = system("echo '" . prompt . "' | openai complete - -t " . g:openaiToken)
@@ -21,9 +25,15 @@ function! GPT()
       call feedkeys(output)
     endif
   endif
+  " Restore the original function name
+  delfunction! CheckBackspace
 endfunction
 
 function! GPTRun()
+  " Override function from COCvim plugin temp
+  function! CheckBackspace() abort
+    return
+  endfunction
   if confirm("Run and Ask gpt-3 about this " . &filetype . " file (Y/n)", "&Yes\n&No") == 1
     let runWith = input("Run with: ")
     let currentFile = @%
@@ -34,9 +44,15 @@ function! GPTRun()
       call feedkeys(output)
     endif
   endif
+  " Restore the original function name
+  delfunction! CheckBackspace
 endfunction
 
 function! GPTFile()
+  " Override function from COCvim plugin temp
+  function! CheckBackspace() abort
+    return
+  endfunction
   if confirm("Ask gpt-3 about this " . &filetype . " file (Y/n)", "&Yes\n&No") == 1
     let prompt = input("Ask: ")
     let currentFile = @%
@@ -47,6 +63,8 @@ function! GPTFile()
       call feedkeys(output)
     endif
   endif
+  " Restore the original function name
+  delfunction! CheckBackspace
 endfunction
 
 
