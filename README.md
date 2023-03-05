@@ -102,7 +102,7 @@ Currently the GPTRun and GPTFile commands are only available for the openai api 
 the `:GPT` command is available on either option.
 I may add `:GPTRun` and `:GPTFile` to the ChatGPT option in the future, but for now they are available with the api openai api option since it's the more reliable option.
 
-For the [chatgpt wrapper/cli](https://github.com/mmabrouk/chatgpt-wrapper) option you will need:
+For the [chatgpt wrapper/cli](https://github.com/mmabrouk/chatgpt-wrapper) option you will need (Not Recommended):
 * chatgpt-wrapper
   ```sh
   pip install git+https://github.com/mmabrouk/chatgpt-wrapper
@@ -114,7 +114,7 @@ For the [chatgpt wrapper/cli](https://github.com/mmabrouk/chatgpt-wrapper) optio
   ```
 * Exit out of that command once you are logged in
 
-For the [openai-cli](https://github.com/peterdemin/openai-cli) option you will need:
+For the [openai-cli](https://github.com/peterdemin/openai-cli) option you will need (Recommended):
 
 * [openai api key](https://beta.openai.com/account/api-keys)
 * openai-cli
