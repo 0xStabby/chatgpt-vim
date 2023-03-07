@@ -144,18 +144,18 @@ If there is a ~/.config/openai.token the openai api will be used by default.
 
 ### Commands
 
-`:GPT` is available to either option chatgpt or openai.
-`:GPTRun` and `:GPTFile` are only available with the openai option.
+`:Gpt` is available to either option chatgpt or openai.
+`:GptRun` and `:GptFile` are only available with the openai option.
 
-- `:GPT` Prompts the user for a prompt and then uses OpenAI's GPT-3 API or ChatGPT to generate a response.
-- `:GPTRun` Prompts the user for a command to run on the current file and then uses OpenAI's GPT-3 API to generate a response based on the contents of the current file and run log.
-- `:GPTFile` Prompts the user for a prompt and then uses OpenAI's GPT-3 API to generate a response based on the contents of the current file.
+- `:Gpt` Prompts the user for a prompt and then uses OpenAI's GPT-3 API or ChatGPT to generate a response.
+- `:GptRun` Prompts the user for a command to run on the current file and then uses OpenAI's GPT-3 API to generate a response based on the contents of the current file and run log.
+- `:GptFile` Prompts the user for a prompt and then uses OpenAI's GPT-3 API to generate a response based on the contents of the current file.
 
 ### Mappings
 
-- `gpt` Maps to the `:GPT` command.
-- `gpr` Maps to the `:GPTRun` command.
-- `gpf` Maps to the `:GPTFile` command.
+- `gpt` Maps to the `:Gpt` command.
+- `gpr` Maps to the `:GptRun` command.
+- `gpf` Maps to the `:GptFile` command.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
