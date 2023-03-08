@@ -98,9 +98,9 @@ With chatgpt somethimes being too busy to use the [openai-cli](https://github.co
 
 With the [openai-cli](https://github.com/peterdemin/openai-cli) option there is also the ability to change the model you would like to interact with.
 
-Currently the GPTRun and GPTFile commands are only available for the openai api option.
-the `:GPT` command is available on either option.
-I may add `:GPTRun` and `:GPTFile` to the ChatGPT option in the future, but for now they are available with the api openai api option since it's the more reliable option.
+Currently the GptRun and GptFile commands are only available for the openai api option.
+the `:Gpt` command is available on either option.
+I may add `:GptRun` and `:GptFile` to the ChatGPT option in the future, but for now they are available with the api openai api option since it's the more reliable option.
 
 For the [chatgpt wrapper/cli](https://github.com/mmabrouk/chatgpt-wrapper) option you will need (Not Recommended):
 * chatgpt-wrapper
