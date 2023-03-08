@@ -91,8 +91,8 @@ To get a local copy up and running follow these simple example steps.
 
 This plugin works with both [chatgpt wrapper/cli](https://github.com/mmabrouk/chatgpt-wrapper) or the [openai-cli](https://github.com/peterdemin/openai-cli)
 
-The first option works with chatgpt by connecting through the browser ui to get the session key.
 The [openai-cli](https://github.com/peterdemin/openai-cli) option works with the openai api and an api key.
+The [chatgpt wrapper/cli](https://github.com/mmabrouk/chatgpt-wrapper) option works with chatgpt by connecting through the browser ui to get the session key.
 
 With chatgpt somethimes being too busy to use the [openai-cli](https://github.com/peterdemin/openai-cli) option is more reliable.
 
@@ -101,18 +101,6 @@ With the [openai-cli](https://github.com/peterdemin/openai-cli) option there is 
 Currently the GptRun and GptFile commands are only available for the openai api option.
 the `:Gpt` command is available on either option.
 I may add `:GptRun` and `:GptFile` to the ChatGPT option in the future, but for now they are available with the api openai api option since it's the more reliable option.
-
-For the [chatgpt wrapper/cli](https://github.com/mmabrouk/chatgpt-wrapper) option you will need (Not Recommended):
-* chatgpt-wrapper
-  ```sh
-  pip install git+https://github.com/mmabrouk/chatgpt-wrapper
-  playwright install firefox
-  ```
-* You will need to login to chatgpt at first
-  ```sh
-  chatgpt install
-  ```
-* Exit out of that command once you are logged in
 
 For the [openai-cli](https://github.com/peterdemin/openai-cli) option you will need (Recommended):
 
@@ -125,6 +113,31 @@ For the [openai-cli](https://github.com/peterdemin/openai-cli) option you will n
   ```sh
   echo "YOUR TOKEN HERE" > ~/.config/openai.token
   ```
+
+
+<details>
+  <summary>For the <a href="https://github.com/mmabrouk/chatgpt-wrapper">chatgpt wrapper/cli</a> option you will need (Incomplete / Not Recommended):</summary>
+  <ul>
+    <li>
+        chatgpt-wrapper
+<pre>
+pip install git+https://github.com/mmabrouk/chatgpt-wrapper
+playwright install firefox
+</pre>
+    </li>
+    <li>
+        You will need to login to chatgpt at first
+<pre>
+chatgpt install
+</pre>
+    </li>
+    <li>
+        Exit out of that command once you are logged in
+    </li>
+  </ul>
+</details>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Installation
