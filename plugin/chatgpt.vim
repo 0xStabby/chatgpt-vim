@@ -11,14 +11,14 @@ function! GPT()
     echo "\n" . output
     if confirm("Write output at cursor position? (Y/n)", "&Yes\n&No") == 1
       call feedkeys("i")
-      call feedkeys(output)
+      call feedkeys(output, "n")
     endif
   else
     let output = system("chatgpt '" . prompt . "'")
     echo "\n" . output
     if confirm("Write output at cursor position? (Y/n)", "&Yes\n&No") == 1
       call feedkeys("i")
-      call feedkeys(output)
+      call feedkeys(output, "n")
     endif
   endif
 endfunction
@@ -31,7 +31,7 @@ function! GPTRun()
     echo "\n" . output
     if confirm("Write output at cursor position? (Y/n)", "&Yes\n&No") == 1
       call feedkeys("i")
-      call feedkeys(output)
+      call feedkeys(output, "n")
     endif
   endif
 endfunction
@@ -44,7 +44,7 @@ function! GPTFile()
     echo "\n" . output
     if confirm("Write output at cursor position? (Y/n)", "&Yes\n&No") == 1
       call feedkeys("i")
-      call feedkeys(output)
+      call feedkeys(output, "n")
     endif
   endif
 endfunction
