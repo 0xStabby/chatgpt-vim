@@ -50,12 +50,12 @@ function! GPTFile()
 endfunction
 
 
-command! Gpt call GPT()
-command! GptRun call GPTRun()
-command! GptFile call GPTFile()
+command! gpt call GPT()
+command! gptRun call GPTRun()
+command! gptFile call GPTFile()
 
 
-map gpt :Gpt<cr>
-map gpr :GptRun<cr>
-map gpf :GptFile<cr>
+map gpt :gpt<cr>
+map gpr :gptRun<cr>
+map gpf :gptFile<cr>
 
