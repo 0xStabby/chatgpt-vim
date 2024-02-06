@@ -66,7 +66,7 @@
 [![Product Name Screen Shot][product-screenshot]](https://github.com/0xStabby/chatgpt-vim)
 _generating a working todo web app with chatgpt-vim_
 
-#### This plugin provides an easy way to use OpenAI's GPT-3 API from within Vim.
+#### This plugin provides an easy way to use OpenAI's GPT API from within Vim.
 #### It currently provides three commands and three mappings to make it easy to use.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -89,53 +89,16 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This plugin works with both [chatgpt wrapper/cli](https://github.com/mmabrouk/chatgpt-wrapper) or the [openai-cli](https://github.com/peterdemin/openai-cli)
-
-* The [openai-cli](https://github.com/peterdemin/openai-cli) option works with the openai api and an api key.
-* The [chatgpt wrapper/cli](https://github.com/mmabrouk/chatgpt-wrapper) option works with chatgpt by connecting through the browser ui to get the session key.
-
-With chatgpt somethimes being too busy to use the [openai-cli](https://github.com/peterdemin/openai-cli) option is more reliable.
-
-With the [openai-cli](https://github.com/peterdemin/openai-cli) option there is also the ability to change the model you would like to interact with.
-
-Currently the GptRun and GptFile commands are only available for the openai api option.
-the `:Gpt` command is available on either option.
-I may add `:GptRun` and `:GptFile` to the ChatGPT option in the future, but for now they are available with the api openai api option since it's the more reliable option.
-
-For the [openai-cli](https://github.com/peterdemin/openai-cli) option you will need (Recommended):
-
 * [openai api key](https://beta.openai.com/account/api-keys)
-* openai-cli
+* set openai key env variable, add this in your .bashrc
   ```sh
-  pip install openai-cli
-  ```
-* create a `~/.config/openai.token` file and add your openai api key to it
-  ```sh
-  echo "YOUR TOKEN HERE" > ~/.config/openai.token
+  export OPENAI_API_KEY=sk-yourapikey
   ```
 
-
-<details>
-  <summary>For the <a href="https://github.com/mmabrouk/chatgpt-wrapper">chatgpt wrapper/cli</a> option you will need (Incomplete / Not Recommended):</summary>
-  <ul>
-    <li>
-        chatgpt-wrapper
-<pre>
-pip install git+https://github.com/mmabrouk/chatgpt-wrapper
-playwright install firefox
-</pre>
-    </li>
-    <li>
-        You will need to login to chatgpt at first
-<pre>
-chatgpt install
-</pre>
-    </li>
-    <li>
-        Exit out of that command once you are logged in
-    </li>
-  </ul>
-</details>
+this plugin also relies on the following utils:
+* bash
+* curl
+* [jq](https://github.com/jqlang/jq)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,12 +120,9 @@ If there is a ~/.config/openai.token the openai api will be used by default.
 
 ### Commands
 
-`:Gpt` is available to either option chatgpt or openai.
-`:GptRun` and `:GptFile` are only available with the openai option.
-
-- `:Gpt` Prompts the user for a prompt and then uses OpenAI's GPT-3 API or ChatGPT to generate a response.
-- `:GptRun` Prompts the user for a command to run on the current file and then uses OpenAI's GPT-3 API to generate a response based on the contents of the current file and run log.
-- `:GptFile` Prompts the user for a prompt and then uses OpenAI's GPT-3 API to generate a response based on the contents of the current file.
+- `:Gpt` Prompts the user for a prompt and then uses OpenAI's GPT API or ChatGPT to generate a response.
+- `:GptRun` Prompts the user for a command to run on the current file and then uses OpenAI's GPT API to generate a response based on the contents of the current file and run log.
+- `:GptFile` Prompts the user for a prompt and then uses OpenAI's GPT API to generate a response based on the contents of the current file.
 
 ### Mappings
 
